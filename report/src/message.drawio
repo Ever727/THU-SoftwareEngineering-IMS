@@ -1,0 +1,154 @@
+<mxfile host="65bd71144e">
+    <diagram id="iCy6AKtpYsJQN63ltVaR" name="第 1 页">
+        <mxGraphModel dx="886" dy="1695" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="消息收发" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;html=1;gradientColor=none;swimlaneFillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="210.00000000000045" y="-1110" width="600" height="880" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="用户A" style="swimlane;startSize=20;html=1;gradientColor=none;" vertex="1" parent="2">
+                    <mxGeometry y="20" width="200" height="860" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="发送消息" style="rounded=0;whiteSpace=wrap;html=1;gradientColor=none;" vertex="1" parent="3">
+                    <mxGeometry x="62.499999999999545" y="30" width="75" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="刷新未读、消息" style="whiteSpace=wrap;html=1;rounded=0;gradientColor=none;" vertex="1" parent="3">
+                    <mxGeometry x="60" y="120" width="75" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="edgeStyle=none;html=1;" edge="1" parent="3" source="7" target="8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="刷新消息已读列表" style="whiteSpace=wrap;html=1;rounded=0;gradientColor=none;" vertex="1" parent="3">
+                    <mxGeometry x="60" y="310" width="75" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="回复消息" style="whiteSpace=wrap;html=1;rounded=0;gradientColor=none;" vertex="1" parent="3">
+                    <mxGeometry x="60" y="390" width="75" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="edgeStyle=none;html=1;" edge="1" parent="3" source="10" target="12">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="渲染消息并更新被回复消息" style="whiteSpace=wrap;html=1;rounded=0;gradientColor=none;" vertex="1" parent="3">
+                    <mxGeometry x="60" y="490" width="75" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="查看历史消息" style="edgeStyle=none;html=1;" edge="1" parent="3" source="12" target="14">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="删除消息" style="whiteSpace=wrap;html=1;rounded=0;gradientColor=none;" vertex="1" parent="3">
+                    <mxGeometry x="60" y="570" width="75" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="根据时间、用户过滤" style="edgeStyle=none;html=1;" edge="1" parent="3" source="14" target="16">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="历史消息" style="whiteSpace=wrap;html=1;rounded=0;gradientColor=none;" vertex="1" parent="3">
+                    <mxGeometry x="60" y="650" width="75" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="关闭" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="3" source="16" target="4">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="29.999999999999545" y="50" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="29.999999999999545" y="750"/>
+                            <mxPoint x="29.999999999999545" y="670"/>
+                            <mxPoint x="29.999999999999545" y="50"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" value="特定消息" style="whiteSpace=wrap;html=1;rounded=0;gradientColor=none;" vertex="1" parent="3">
+                    <mxGeometry x="60" y="730" width="75" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="后端" style="swimlane;startSize=20;html=1;gradientColor=none;" vertex="1" parent="2">
+                    <mxGeometry x="200" y="20" width="200" height="860" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="处理消息时间、内容等" style="whiteSpace=wrap;html=1;rounded=0;gradientColor=none;" vertex="1" parent="17">
+                    <mxGeometry x="59.999999999999545" y="70" width="75" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="websocket" style="endArrow=none;html=1;" edge="1" parent="17">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="96.99999999999955" y="140" as="sourcePoint"/>
+                        <mxPoint x="97.15999999999954" y="110" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" value="更新当前会话已读列表" style="whiteSpace=wrap;html=1;rounded=0;gradientColor=none;" vertex="1" parent="17">
+                    <mxGeometry x="60" y="250" width="75" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="17">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-65" y="330" as="sourcePoint"/>
+                        <mxPoint x="265.0000000000002" y="330" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" value="处理消息与被回复消息" style="whiteSpace=wrap;html=1;rounded=0;gradientColor=none;" vertex="1" parent="17">
+                    <mxGeometry x="62.5" y="430" width="75" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="websocket" style="endArrow=none;html=1;" edge="1" parent="17">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="99.65666666666652" y="470" as="sourcePoint"/>
+                        <mxPoint x="99.98999999999955" y="510" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="24" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="17">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-65" y="510" as="sourcePoint"/>
+                        <mxPoint x="265.0000000000002" y="510" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="25" value="为消息标记删除用户" style="whiteSpace=wrap;html=1;rounded=0;gradientColor=none;" vertex="1" parent="17">
+                    <mxGeometry x="62.5" y="570" width="75" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="其他用户" style="swimlane;startSize=20;html=1;gradientColor=none;" vertex="1" parent="2">
+                    <mxGeometry x="400" y="20" width="200" height="860" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="" style="edgeStyle=none;html=1;" edge="1" parent="26" source="28" target="29">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="刷新未读、消息" style="whiteSpace=wrap;html=1;rounded=0;gradientColor=none;" vertex="1" parent="26">
+                    <mxGeometry x="65" y="120" width="75" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="点击会话清除未读" style="whiteSpace=wrap;html=1;rounded=0;gradientColor=none;" vertex="1" parent="26">
+                    <mxGeometry x="65" y="200" width="75" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="刷新消息已读列表" style="whiteSpace=wrap;html=1;rounded=0;gradientColor=none;" vertex="1" parent="26">
+                    <mxGeometry x="65" y="310" width="75" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="渲染消息并更新被回复消息" style="whiteSpace=wrap;html=1;rounded=0;gradientColor=none;" vertex="1" parent="26">
+                    <mxGeometry x="65" y="490" width="75" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="" style="edgeStyle=none;html=1;" edge="1" parent="2" source="4" target="18">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="99.99999999999955" y="110"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="33" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="2" source="5" target="28">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="134.99999999999955" y="159.66" as="sourcePoint"/>
+                        <mxPoint x="459.99999999999955" y="160" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="34" value="" style="edgeStyle=none;html=1;" edge="1" parent="2" source="29" target="20">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="502.99999999999955" y="290"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="35" value="" style="edgeStyle=none;html=1;" edge="1" parent="2" source="8" target="22">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="97.99999999999955" y="470"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="36" value="" style="edgeStyle=none;html=1;" edge="1" parent="2" source="12" target="25">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="159.99999999999955" y="610"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

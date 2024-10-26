@@ -1,0 +1,2557 @@
+<!DOCTYPE html><html><head>
+      <title>REPORT</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////root/.vscode-server/extensions/shd101wyy.markdown-preview-enhanced-0.8.13/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h2 id="用户故事">用户故事 </h2>
+<h3 id="用户注册">用户注册 </h3>
+<ul>
+<li>作为一个新用户,我希望能够快速注册一个新账号,只需要填写基本的个人信息(如用户名、密码)即可完成注册。</li>
+<li>作为一个新用户,我希望注册过程中能得到清晰的提示和反馈,如果注册信息有误能够及时得到错误提示。</li>
+</ul>
+<h3 id="用户登录与登出">用户登录与登出 </h3>
+<ul>
+<li>作为一个老用户,我希望能够快速登录到我的账号,只需要输入用户名和密码即可登录。</li>
+<li>作为一个老用户,我希望登录过程中能得到清晰的提示和反馈,如果登录信息有误能够及时得到错误提示。</li>
+<li>作为一个已登录用户,我希望登录后能自动同步之前的聊天记录,不会丢失任何消息。</li>
+<li>作为一个已登录用户,我希望能够安全退出登录,以保护我的账号安全。</li>
+</ul>
+<h3 id="用户信息管理">用户信息管理 </h3>
+<ul>
+<li>作为一个已登录用户,我希望能够管理我的个人信息,包括修改用户名、密码、邮箱、手机号、头像等。</li>
+<li>作为一个已登录用户,我希望修改敏感信息(如密码)时能够通过验证来确保安全性。</li>
+<li>作为一个已登录用户,我希望修改个人信息后能够立即生效,不需要重新登录。</li>
+<li>作为一个已登录用户，我希望能够注销账号，让其他人不能再进行登录、聊天、添加好友等操作。</li>
+</ul>
+<h3 id="好友管理">好友管理 </h3>
+<ul>
+<li>作为一个已登录用户,我希望能够通过搜索用户名或浏览好友列表来找到其他用户,并向他们发送好友申请。</li>
+<li>作为一个已登录用户,我希望能够查看好友申请列表,并根据不同情况（同意、忽略）处理好友申请。</li>
+<li>作为一个已登录用户,我希望能够查看自己的好友列表,并对好友进行分组管理。</li>
+<li>作为一个已登录用户,我希望能够删除不需要的好友,同时保留之前与该好友的聊天记录。</li>
+</ul>
+<h3 id="消息收发">消息收发 </h3>
+<ul>
+<li>作为一个已登录用户,我希望能够与其他用户进行聊天,包括发送文本消息。</li>
+<li>作为一个已登录用户,我希望看到每条消息的发送者、接收者、发送时间、消息内容、已读状态等信息。</li>
+<li>作为一个已登录用户,我希望能够看到每个会话未读计数。</li>
+<li>作为一个已登录用户,我希望收到的消息能够及时显示,不会因为网络问题而延迟。</li>
+</ul>
+<h3 id="聊天记录管理">聊天记录管理 </h3>
+<ul>
+<li>作为一个已登录用户,我希望能够查看之前的聊天记录,并按照时间或发送者进行筛选和检索。</li>
+<li>作为一个已登录用户,我希望能够删除自己不需要保留的聊天记录,但不会影响其他人查看该记录。</li>
+</ul>
+<h3 id="用户群组">用户群组 </h3>
+<ul>
+<li>作为一个已登录用户,我希望能够创建新的群聊,并从我的好友列表中邀请成员加入。</li>
+<li>作为一个群聊成员,我希望能够查看群聊的基本信息,如群聊名称、群成员列表、公告、消息记录等。</li>
+<li>作为一个群聊管理员,我希望能够管理群组,包括修改群组名称、头像、公告等。</li>
+<li>作为一个群聊管理员,我希望能够邀请新成员加入群聊,并对群成员进行管理(如添加和踢出群聊)。</li>
+<li>作为一个已登录用户,我希望能够查看和搜索群组消息记录。</li>
+<li>作为一个已登录用户,我希望能够邀请他人加入群组。</li>
+<li>作为一个群主，我希望能够转让群主，并对所有群成员进行管理（如设置和取消管理员、邀请和踢出群聊成员、修改群公告等）。</li>
+</ul>
+<h3 id="安全与隐私">安全与隐私 </h3>
+<ul>
+<li>作为一个已登录用户，我希望我的密码通过加密传输，防止被窃取、泄露。</li>
+<li>作为一个已登录用户，我希望我的任何操作都需要验证权限，防止恶意操作。</li>
+</ul>
+<h2 id="工作流程图">工作流程图 </h2>
+<p><img src="register.png" alt="register"></p>
+<p><img src="login.png" alt="login"></p>
+<p><img src="info.png" alt="info"></p>
+<p><img src="friend.png" alt="friend"></p>
+<p><img src="message.png" alt="message"></p>
+<p><img src="group.png" alt="group"></p>
+<h2 id="模块">模块 </h2>
+<h3 id="前端模块">前端模块 </h3>
+<p>前端主要由<strong>首页模块</strong>、<strong>注册模块</strong>、<strong>登录模块</strong>、<strong>个人信息模块</strong>、<strong>聊天模块</strong>、<strong>默认模块</strong>构成，有相应路由。其余模块内嵌于上述模块，分别为<strong>头像模块</strong>、<strong>聊天窗口模块</strong>、<strong>会话选择模块</strong>、<strong>历史消息模块</strong>、<strong>主页模块</strong>、<strong>导航UI模块</strong>、<strong>菜单列表模块</strong>、<strong>聊天气泡模块</strong>、<strong>公告模块</strong>。</p>
+<table>
+<thead>
+<tr>
+<th>首页模块</th>
+<th>注册模块</th>
+<th>登录模块</th>
+<th>个人信息模块</th>
+<th>聊天模块</th>
+<th>默认模块</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/index</td>
+<td>/register</td>
+<td>/login</td>
+<td>/user_info</td>
+<td>/chat_interface</td>
+<td>/</td>
+</tr>
+</tbody>
+</table>
+<h4 id="首页模块">首页模块 </h4>
+<p>用于跳转至注册和登录页面，并内嵌<strong>导航UI模块</strong>。</p>
+<h4 id="注册模块">注册模块 </h4>
+<p>用于注册新用户，并将用户信息存储至数据库。</p>
+<h4 id="登录模块">登录模块 </h4>
+<p>用于登录已有用户，并生成后续操作的 token。</p>
+<h4 id="个人信息模块">个人信息模块 </h4>
+<p>用于展示用户的个人信息，并提供修改、注销功能。如果是他人主页，提供加好友、删除好友功能。</p>
+<h4 id="聊天模块">聊天模块 </h4>
+<p>主要聊天功能，几乎集成所有有关好友、群聊的功能，但功能都通过其他模块实现。内嵌<strong>主页模块</strong>、<strong>菜单列表模块</strong>。从后端拉取好友列表、群聊列表、好友请求列表、群聊申请列表，用以渲染<strong>菜单列表模块</strong>。</p>
+<h4 id="默认模块">默认模块 </h4>
+<p>与<strong>首页模块</strong>一致，为所有页面提供<strong>导航UI模块</strong>的功能。</p>
+<h4 id="头像模块">头像模块 </h4>
+<p>渲染头像，并且提供右键菜单，跳转到主页或修改分组标签。</p>
+<h4 id="聊天窗口模块">聊天窗口模块 </h4>
+<p>通过<strong>主页模块</strong>提供的活跃会话过滤消息，渲染每条消息。提供发送消息、回复消息、删除消息的功能。通过活跃会话的群聊私聊属性渲染不同的会话窗口。为群聊管理功能提供各种函数接口，包括设置移除管理员、踢人、退群、转让群主、邀请入群等。同时提供聊天的侧栏功能，包括设置群公告、设置群头像、设置群名称、设置群头像、设置群公告等。侧栏还包括查看历史消息的接口。内嵌<strong>聊天气泡模块</strong>、<strong>历史消息模块</strong>、<strong>公告模块</strong>。</p>
+<h4 id="会话选择模块">会话选择模块 </h4>
+<p>渲染会话列表，包括头像、名称、未读计数、最后一条消息等，并提供切换会话的功能。</p>
+<h4 id="历史消息模块">历史消息模块 </h4>
+<p>从前端数据库获取当前会话的历史消息，并进行渲染，包括头像、名称、时间、消息内容等。可以根据时间、用户进行条件过滤，并可清除过滤条件。</p>
+<h4 id="主页模块">主页模块 </h4>
+<p>从后端拉取聊天记录，更新本地数据库，并计算会话未读计数。记录当前选中会话，并渲染聊天窗口。内嵌<strong>聊天窗口模块</strong>、<strong>会话选择模块</strong>。</p>
+<h4 id="导航ui模块">导航UI模块 </h4>
+<p>渲染导航栏，包括头像、用户名，提供登出与跳转至<strong>聊天模块</strong>的功能。导航栏还可跳转至<strong>个人信息模块</strong>、<strong>首页模块</strong>、<strong>注册模块</strong>、<strong>登录模块</strong>。并提供精确搜索用户的功能。</p>
+<h4 id="菜单列表模块">菜单列表模块 </h4>
+<p>用于渲染好友列表、群聊列表、好友请求列表、群聊申请列表，并提供相应的操作功能，包括同意、忽略好友申请，同意、拒绝群聊申请。内嵌<strong>头像模块</strong>。</p>
+<h4 id="聊天气泡模块">聊天气泡模块 </h4>
+<p>渲染聊天气泡，包括头像、名称、消息内容、已读列表、回复计数等。根据消息属性渲染是否为回复消息，并提供删除消息的功能。</p>
+<h4 id="公告模块">公告模块 </h4>
+<p>渲染公告列表，包括发表人、时间、头像、内容等。提供编辑新公告的功能。</p>
+<h3 id="后端模块">后端模块 </h3>
+<ul>
+<li>后端 <code>Account</code> 模块，提供用户注账号管理、用户登录和用户查找功能</li>
+<li>后端 <code>Friendship</code> 模块，提供好友申请、列表拉取和好友管理功能</li>
+<li>后端 <code>Chat</code> 模块，提供与消息、会话和群聊相关的功能。</li>
+</ul>
+<h4 id="后端-account-模块">后端 Account 模块 </h4>
+<ul>
+<li>账号管理：包括账号的注册与注销 (<code>register</code> 函数和 <code>delete</code> 函数) 和个人信息管理 (<code>profile</code> 函数拉取，<code>update_profile</code> 编辑) 功能</li>
+<li>用户登录：登录并分配 <code>token</code>，用于后续操作的认证 ( <code>login</code> 函数)</li>
+<li>用户查找：根据 <code>userId</code> 查找指定用户 ( <code>search_user</code>函数)</li>
+</ul>
+<h4 id="后端-friendship-模块">后端 Friendship 模块 </h4>
+<ul>
+<li>好友申请：包括好友请求的发送和接受 (<code>add_friend</code> 函数和 <code>accept_friend</code> 函数)</li>
+<li>列表拉取：包括得到好友列表和好友请求列表 (<code>get</code>)</li>
+<li>好友管理: 包括好友分组 (<code>add_tag</code>) 和删除好友 (<code>delete_friend</code>)</li>
+</ul>
+<h4 id="后端-chat-模块">后端 Chat 模块 </h4>
+<ul>
+<li>消息的发送和拉取：</li>
+<li>消息相关信息管理：维护详细的已读名单，删除者名单和被回复次数</li>
+<li>会话的创建与拉取：</li>
+<li>群聊管理
+<ul>
+<li>成员管理：邀请用户、踢出成员和成员退群</li>
+<li>成员权限管理：转让群主、设置或移除管理员</li>
+<li>群聊信息修改：修改群名和群头像、创建群公告</li>
+</ul>
+</li>
+</ul>
+<h2 id="数据库设计">数据库设计 </h2>
+<h3 id="前端">前端 </h3>
+<p>继承自 <code>Dexie</code> ，管理本地的 <code>IndexedDB</code> 数据库，主要用于对应到前端的 <code>Message</code> 和 <code>Conversation</code> 两个 <code>interface</code>。</p>
+<h4 id="messages">messages </h4>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>int</td>
+<td>消息主键</td>
+</tr>
+<tr>
+<td>conversation</td>
+<td>int</td>
+<td>会话 id</td>
+</tr>
+<tr>
+<td>sender</td>
+<td>str</td>
+<td>发送者 id</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>datetime</td>
+<td>消息发送时间</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="conversations">conversations </h4>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>int</td>
+<td>主键</td>
+</tr>
+<tr>
+<td>type</td>
+<td>str</td>
+<td>群聊类型，群聊和私聊</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="message">Message </h4>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>int</td>
+<td>消息主键</td>
+</tr>
+<tr>
+<td>conversation</td>
+<td>int</td>
+<td>会话 id</td>
+</tr>
+<tr>
+<td>sender</td>
+<td>str</td>
+<td>发送者</td>
+</tr>
+<tr>
+<td>senderId</td>
+<td>str</td>
+<td>发送者 ID</td>
+</tr>
+<tr>
+<td>content</td>
+<td>str</td>
+<td>消息内容</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>datetime</td>
+<td>消息发送时间</td>
+</tr>
+<tr>
+<td>sendTime</td>
+<td>datetime</td>
+<td>服务器端消息发送时间</td>
+</tr>
+<tr>
+<td>avatar</td>
+<td>str</td>
+<td>头像</td>
+</tr>
+<tr>
+<td>readList</td>
+<td>list[str]</td>
+<td>已读用户列表</td>
+</tr>
+<tr>
+<td>replyId</td>
+<td>int</td>
+<td>回复消息的ID</td>
+</tr>
+<tr>
+<td>replyCount</td>
+<td>int</td>
+<td>回复消息的计数</td>
+</tr>
+<tr>
+<td>deleteList</td>
+<td>list[str]</td>
+<td>删除用户列表</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="conversation">Conversation </h4>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>int</td>
+<td>会话 id</td>
+</tr>
+<tr>
+<td>type</td>
+<td>str</td>
+<td>群聊类型，群聊和私聊</td>
+</tr>
+<tr>
+<td>members</td>
+<td>list[User]</td>
+<td>会话成员</td>
+</tr>
+<tr>
+<td>unreadCount</td>
+<td>int</td>
+<td>未读计数</td>
+</tr>
+<tr>
+<td>avatarUrl</td>
+<td>str</td>
+<td>头像</td>
+</tr>
+<tr>
+<td>otherUserId</td>
+<td>str</td>
+<td>私聊对方的 ID</td>
+</tr>
+<tr>
+<td># 以下为群聊的字段</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>groupName</td>
+<td>str</td>
+<td>群名</td>
+</tr>
+<tr>
+<td>groupNotificationList</td>
+<td>list[Notification]</td>
+<td>群公告列表</td>
+</tr>
+<tr>
+<td>host</td>
+<td>User</td>
+<td>群主</td>
+</tr>
+<tr>
+<td>hostId</td>
+<td>str</td>
+<td>群主 ID</td>
+</tr>
+<tr>
+<td>adminList</td>
+<td>list[User]</td>
+<td>管理员列表</td>
+</tr>
+<tr>
+<td>adminIdList</td>
+<td>list[str]</td>
+<td>管理员 ID 列表</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="user">User </h4>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>int</td>
+<td>主键</td>
+</tr>
+<tr>
+<td>userId</td>
+<td>str</td>
+<td>用户 id</td>
+</tr>
+<tr>
+<td>userName</td>
+<td>str</td>
+<td>用户名</td>
+</tr>
+<tr>
+<td>avatarUrl</td>
+<td>str</td>
+<td>头像</td>
+</tr>
+<tr>
+<td>isDeleted</td>
+<td>bool</td>
+<td>是否已经注销</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="后端">后端 </h3>
+<p>选用 <code>SQLite</code> 作为后端数据库。</p>
+<h4 id="user-1">User </h4>
+<p>表示用户的账户资料</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>int</td>
+<td>主键</td>
+</tr>
+<tr>
+<td>userId</td>
+<td>str</td>
+<td>账号，唯一，用于标识用户身份</td>
+</tr>
+<tr>
+<td>password</td>
+<td>str</td>
+<td>密码，加密储存在数据库中</td>
+</tr>
+<tr>
+<td>email</td>
+<td>str</td>
+<td>邮箱</td>
+</tr>
+<tr>
+<td>phoneNumber</td>
+<td>str</td>
+<td>电话号码</td>
+</tr>
+<tr>
+<td>avatarUrl</td>
+<td>str</td>
+<td>表示头像的字符串</td>
+</tr>
+<tr>
+<td>isDeleted</td>
+<td>bool</td>
+<td>账户状态, True表示已注销，注销的用户保留已有数据，但不再产生新的相关数据</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="friendship">Friendship </h4>
+<p>表示好友关系，一对好友对应两条记录</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>int</td>
+<td></td>
+</tr>
+<tr>
+<td>userId</td>
+<td>str</td>
+<td>用户账号</td>
+</tr>
+<tr>
+<td>friendId</td>
+<td>str</td>
+<td>好友账号</td>
+</tr>
+<tr>
+<td>tag</td>
+<td>str</td>
+<td>对好友的分组（备注）</td>
+</tr>
+<tr>
+<td>status</td>
+<td>bool</td>
+<td>False表示已删除，不能在打tag和发消息</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="friendshiprequest">FriendshipRequest </h4>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>int</td>
+<td></td>
+</tr>
+<tr>
+<td>senderId</td>
+<td>str</td>
+<td>请求发送者的账号</td>
+</tr>
+<tr>
+<td>receiverId</td>
+<td>str</td>
+<td>接受请求者的账号</td>
+</tr>
+<tr>
+<td>sendTime</td>
+<td>时间戳</td>
+<td>发送时间</td>
+</tr>
+<tr>
+<td>message</td>
+<td>str</td>
+<td>请求中打招呼的内容</td>
+</tr>
+<tr>
+<td>status</td>
+<td>int</td>
+<td>请求状态，0为未处理，1为已接受，2为已过期</td>
+</tr>
+</tbody>
+</table>
+<h4 id="conversation-1">Conversation </h4>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>int</td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>str</td>
+<td>群聊类型，群聊和私聊</td>
+</tr>
+<tr>
+<td>members</td>
+<td>list[User]</td>
+<td>会话成员</td>
+</tr>
+<tr>
+<td>status</td>
+<td>bool</td>
+<td>False表示群聊已失效，主要用于私聊和Friendship的状态保持一致</td>
+</tr>
+<tr>
+<td># 以下为群聊的字段</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>host</td>
+<td>User</td>
+<td>群主</td>
+</tr>
+<tr>
+<td>admins</td>
+<td>list[User]</td>
+<td>管理员</td>
+</tr>
+<tr>
+<td>avatarUrl</td>
+<td>str</td>
+<td>群聊头像，私聊显示对方头像</td>
+</tr>
+<tr>
+<td>groupName</td>
+<td>str</td>
+<td>群名</td>
+</tr>
+<tr>
+<td>groupNotificationList</td>
+<td>list[Notification]</td>
+<td>群公告列表</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="notification">Notification </h4>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>int</td>
+<td>主键</td>
+</tr>
+<tr>
+<td>userId</td>
+<td>str</td>
+<td>发布者账号</td>
+</tr>
+<tr>
+<td>userName</td>
+<td>str</td>
+<td>发布者呢称</td>
+</tr>
+<tr>
+<td>avatarUrl</td>
+<td>str</td>
+<td>发布者头像</td>
+</tr>
+<tr>
+<td>content</td>
+<td>str</td>
+<td>群通知的内容</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>datetime</td>
+<td>发送时间</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="message-1">Message </h4>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>int</td>
+<td></td>
+</tr>
+<tr>
+<td>conversation</td>
+<td>Conversation</td>
+<td>所属会话</td>
+</tr>
+<tr>
+<td>sender</td>
+<td>User</td>
+<td>发送者</td>
+</tr>
+<tr>
+<td>receiver</td>
+<td>list[User]</td>
+<td>接收者</td>
+</tr>
+<tr>
+<td>sendTime</td>
+<td>datetime</td>
+<td>消息发送时间</td>
+</tr>
+<tr>
+<td>updateTime</td>
+<td>datetime</td>
+<td>消息更新时间</td>
+</tr>
+<tr>
+<td>content</td>
+<td>str</td>
+<td>消息内容</td>
+</tr>
+<tr>
+<td>replyTo</td>
+<td>Message</td>
+<td>引用消息的id</td>
+</tr>
+<tr>
+<td>readUsers</td>
+<td>list[User]</td>
+<td>已读名单</td>
+</tr>
+<tr>
+<td>deleteUsers</td>
+<td>list[User]</td>
+<td>删除这条消息的名单</td>
+</tr>
+<tr>
+<td>replyCount</td>
+<td>int</td>
+<td>被回复次数</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="invitation">Invitation </h4>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>int</td>
+<td></td>
+</tr>
+<tr>
+<td>sender</td>
+<td>User</td>
+<td>发送者</td>
+</tr>
+<tr>
+<td>receiver</td>
+<td>User</td>
+<td>接收者，为群聊的群主和管理员，而不是被邀请者</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>datetime</td>
+<td>邀请更新时间</td>
+</tr>
+</tbody>
+</table>
+<h2 id="api-设计">API 设计 </h2>
+<h3 id="状态码">状态码 </h3>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>错误码</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>400</td>
+<td>-2</td>
+<td>请求错误，例如格式错误、缺少参数</td>
+</tr>
+<tr>
+<td>401</td>
+<td>-3</td>
+<td>认证失败，如密码错误、token失效</td>
+</tr>
+<tr>
+<td>404</td>
+<td>-1</td>
+<td>无法请求资源</td>
+</tr>
+<tr>
+<td>403</td>
+<td>-4</td>
+<td>拒绝访问并且无需说明理由</td>
+</tr>
+<tr>
+<td>200</td>
+<td>0</td>
+<td>成功请求</td>
+</tr>
+</tbody>
+</table>
+<h3 id="注册-register">注册 /register </h3>
+<h4 id="功能描述">功能描述 </h4>
+<p>用户注册功能，用户输入ID、用户名、密码等信息，系统自动生成用户
+ID，并将用户信息存储到数据库中。对用户 ID、密码进行一定的格式要求规范，并进行密码加密存储。</p>
+<h4 id="输入参数">输入参数 </h4>
+<ul>
+<li>用户 ID：用户 ID，长度限制 3-16
+个字符，只能包含字母、数字、下划线。</li>
+<li>用户名：用户名，长度限制 3-16
+个字符，只能包含字母、数字、下划线、中文。</li>
+<li>密码：密码，长度限制 6-16 个字符，只能包含字母、数字、下划线。</li>
+</ul>
+<h4 id="请求">请求 </h4>
+<p>使用 POST 方法，请求地址为 <code>/register</code>，请求包含 JSON
+格式的正文。</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+  <span class="token property">"userId"</span><span class="token operator">:</span> <span class="token string">"test_id"</span><span class="token punctuation">,</span>
+  <span class="token property">"userName"</span><span class="token operator">:</span> <span class="token string">"test_user"</span><span class="token punctuation">,</span>
+  <span class="token property">"password"</span><span class="token operator">:</span> <span class="token string">"123456"</span><span class="token punctuation">,</span>  
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>userId</code> 必选，不可重复，表示用户
+ID，只能包含字母、数字、下划线，长度限制 3-16 个字符。</li>
+<li><code>userName</code> 必选，表示用户名，只能包含字母、数字、下划线、中文，3-16
+个字符。</li>
+<li><code>password</code> 必选，表示密码，只能包含字母、数字、下划线，6-16 个字符。</li>
+</ul>
+<h4 id="行为">行为 </h4>
+<ul>
+<li>系统验证用户输入的ID、用户名、密码是否符合格式要求，ID
+是否唯一。</li>
+<li>系统对密码进行加密，并将用户信息存储到数据库中。</li>
+</ul>
+<h4 id="响应">响应 </h4>
+<p>注册成功：设置 HTTP 状态码为 HTTP 200 OK，响应为空，提示用户创建成功，并跳转到登录页面。</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+	<span class="token property">"code"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	<span class="token property">"info"</span><span class="token operator">:</span> <span class="token string">"Succeed"</span>
+	<span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"/login"</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="异常处理">异常处理 </h4>
+<p>所有错误响应的格式均为：</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>  
+	<span class="token property">"code"</span><span class="token operator">:</span> *<span class="token punctuation">,</span>  
+	<span class="token property">"info"</span><span class="token operator">:</span> <span class="token string">"[error message]"</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>code</code> 表示错误码</li>
+<li><code>info</code> 表示错误信息</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>错误码</th>
+<th>错误原因</th>
+<th>错误提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>405</td>
+<td>-3</td>
+<td>请求方式错误，如使用了 GET 方法</td>
+<td>请求方式错误</td>
+</tr>
+<tr>
+<td>400</td>
+<td>-2</td>
+<td>缺少用户 ID 或格式错误</td>
+<td>用户 ID 格式错误，请重试</td>
+</tr>
+<tr>
+<td>400</td>
+<td>-2</td>
+<td>缺少用户名或格式错误</td>
+<td>用户名格式错误，请重试</td>
+</tr>
+<tr>
+<td>400</td>
+<td>-2</td>
+<td>缺少密码或格式错误</td>
+<td>密码格式错误，请重试</td>
+</tr>
+<tr>
+<td>400</td>
+<td>-2</td>
+<td>用户 ID 重复或使用被注销 ID</td>
+<td>用户 ID 已被占用，请重试</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="登录-login">登录 /login </h3>
+<h4 id="输入参数-1">输入参数 </h4>
+<ul>
+<li>用户名：用户名。</li>
+<li>密码：密码。</li>
+</ul>
+<h4 id="请求-1">请求 </h4>
+<p>使用 POST 方法，请求地址为 <code>/login</code> 。</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+	<span class="token property">"userId"</span><span class="token operator">:</span> <span class="token string">"myId"</span><span class="token punctuation">,</span>
+	<span class="token property">"password"</span><span class="token operator">:</span> <span class="token string">"myPassword"</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>userId</code> 表示用户 ID</li>
+<li><code>password</code> 表示用户密码</li>
+</ul>
+<h4 id="响应-1">响应 </h4>
+<p>若用户 ID 存在，且密码与数据库核对成功时，请求成功，状态码为 200 OK，登录并跳转。</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+	<span class="token property">"code"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	<span class="token property">"info"</span><span class="token operator">:</span> <span class="token string">"Succeed"</span><span class="token punctuation">,</span>
+	<span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"/chat/&lt;id&gt;"</span><span class="token punctuation">,</span>
+	<span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"userId"</span>
+	<span class="token property">"token"</span><span class="token operator">:</span> <span class="token string">"***.***.***"</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>url</code> 表示用户登录后跳转的聊天窗口的 url</li>
+<li><code>id</code> 表示用户 ID</li>
+<li><code>token</code> 为签发的 JWT 令牌，后续用户每一步操作都需要验证 JWT 令牌</li>
+</ul>
+<h4 id="异常处理-1">异常处理 </h4>
+<p>所有异常响应格式均为：</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>  
+	<span class="token property">"code"</span><span class="token operator">:</span> *<span class="token punctuation">,</span>  
+	<span class="token property">"info"</span><span class="token operator">:</span> <span class="token string">"[error message]"</span>
+<span class="token punctuation">}</span>
+</code></pre><table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>错误码</th>
+<th>错误原因</th>
+<th>错误提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>404</td>
+<td>-1</td>
+<td>用户 ID 不存在</td>
+<td>用户 ID 不存在，请重试</td>
+</tr>
+<tr>
+<td>401</td>
+<td>-3</td>
+<td>密码错误</td>
+<td>账号或密码错误，请重试</td>
+</tr>
+<tr>
+<td>404</td>
+<td>-1</td>
+<td>用户已注销</td>
+<td>该用户已注销</td>
+</tr>
+<tr>
+<td>400</td>
+<td>-2</td>
+<td>缺少 ID 或密码</td>
+<td>缺少 ID 或密码</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="注销-delete">注销 /delete </h3>
+<h4 id="请求-2">请求 </h4>
+<p>使用 POST 方法，请求地址为 <code>/cancel</code> ，需要对用户身份进行验证。</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+	<span class="token property">"userId"</span><span class="token operator">:</span> <span class="token string">"myId"</span><span class="token punctuation">,</span>
+	<span class="token property">"password"</span><span class="token operator">:</span> <span class="token string">"myPassword"</span><span class="token punctuation">,</span>
+	<span class="token property">"token"</span><span class="token operator">:</span> <span class="token string">"***.***.***"</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>userId</code> 表示用户 ID</li>
+<li><code>password</code> 表示用户密码</li>
+<li><code>token</code> 表示 JWT 令牌</li>
+</ul>
+<h4 id="响应-2">响应 </h4>
+<p>若用户 ID 和密码与数据库核对成功时，请求成功，状态码为 200 OK，跳转到注册页面。</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+	<span class="token property">"code"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	<span class="token property">"info"</span><span class="token operator">:</span> <span class="token string">"Succeed"</span><span class="token punctuation">,</span>
+	<span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"/register"</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="异常处理-2">异常处理 </h4>
+<p>所有异常响应格式均为：</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>  
+	<span class="token property">"code"</span><span class="token operator">:</span> *<span class="token punctuation">,</span>  
+	<span class="token property">"info"</span><span class="token operator">:</span> <span class="token string">"[error message]"</span>
+<span class="token punctuation">}</span>
+</code></pre><table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>错误码</th>
+<th>错误原因</th>
+<th>错误提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>401</td>
+<td>-3</td>
+<td>密码错误</td>
+<td>密码错误，请重试</td>
+</tr>
+<tr>
+<td>404</td>
+<td>-1</td>
+<td>用户已注销或用户 ID 错误或 ID 不存在</td>
+<td>ID 错误，请重试</td>
+</tr>
+<tr>
+<td>400</td>
+<td>-2</td>
+<td>缺少 ID 或密码</td>
+<td>缺少 ID 或密码</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="登出-logout">登出 /logout </h3>
+<h4 id="请求-3">请求 </h4>
+<p>使用 POST 方法，请求地址为 <code>/logout</code> 。</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+	<span class="token property">"userId"</span><span class="token operator">:</span> <span class="token string">"myId"</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>userId</code> 表示用户 ID</li>
+</ul>
+<h4 id="响应-3">响应 </h4>
+<p>若用户 ID 存在，且密码与数据库核对成功时，请求成功，状态码为 200 OK，并跳转至登陆界面。</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+	<span class="token property">"code"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	<span class="token property">"info"</span><span class="token operator">:</span> <span class="token string">"Succeed"</span><span class="token punctuation">,</span>
+	<span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"/login"</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>url</code> 表示跳转 url</li>
+</ul>
+<h4 id="异常处理-3">异常处理 </h4>
+<p>无异常处理</p>
+<hr>
+<h3 id="个人信息页面-profileuserid">个人信息页面 /profile/<userid> </userid></h3>
+<h4 id="请求-4">请求 </h4>
+<p>使用 GET 方法 ，无请求体。</p>
+<h3 id="响应-4">响应 </h3>
+<p>若用户 ID 和密码与数据库核对成功时，请求成功，状态码为 200 OK。</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+	<span class="token property">"code"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	<span class="token property">"info"</span><span class="token operator">:</span> <span class="token string">"Succeed"</span><span class="token punctuation">,</span>
+	<span class="token property">"userId"</span><span class="token operator">:</span> <span class="token string">"theirId"</span><span class="token punctuation">,</span>
+	<span class="token property">"userName"</span><span class="token operator">:</span> <span class="token string">"theirName"</span><span class="token punctuation">,</span>
+	<span class="token property">"avatar"</span><span class="token operator">:</span> <span class="token string">"avatar"</span><span class="token punctuation">,</span>
+	<span class="token property">"email"</span><span class="token operator">:</span> <span class="token string">"myEmail@xx.xxx"</span>
+	<span class="token property">"phoneNumber"</span><span class="token operator">:</span> <span class="token string">"12345678900"</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>userId</code> 表示用户 ID</li>
+<li><code>userName</code> 表示用户名</li>
+<li><code>avatar</code> 表示用户头像路径</li>
+<li><code>email</code> 表示用户邮箱</li>
+<li><code>phoneNumber</code> 表示用户电话号码</li>
+</ul>
+<h4 id="异常处理-4">异常处理 </h4>
+<p>所有异常响应格式均为：</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>  
+	<span class="token property">"code"</span><span class="token operator">:</span> *<span class="token punctuation">,</span>  
+	<span class="token property">"info"</span><span class="token operator">:</span> <span class="token string">"[error message]"</span>
+<span class="token punctuation">}</span>
+</code></pre><table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>错误码</th>
+<th>错误原因</th>
+<th>错误提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>404</td>
+<td>-1</td>
+<td>用户 ID 错误或 ID 不存在</td>
+<td>用户不存在</td>
+</tr>
+<tr>
+<td>404</td>
+<td>-2</td>
+<td>用户已注销</td>
+<td>用户已注销</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="用户资料修改-update_profileuserid">用户资料修改 update_profile/<userid> </userid></h3>
+<h4 id="请求-5">请求 </h4>
+<p>使用 POST 方法 。</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+	<span class="token property">"newName"</span><span class="token operator">:</span> <span class="token string">"myName"</span><span class="token punctuation">,</span>
+	<span class="token property">"newPassword"</span><span class="token operator">:</span> <span class="token string">"bcd"</span>
+	<span class="token property">"newEmail"</span><span class="token operator">:</span> <span class="token string">"myEmail"</span><span class="token punctuation">,</span>
+	<span class="token property">"newPhoneNumber"</span><span class="token operator">:</span> <span class="token string">"11122223333"</span><span class="token punctuation">,</span>
+	<span class="token property">"newAvatar"</span><span class="token operator">:</span> <span class="token string">"myAvatar"</span><span class="token punctuation">,</span>
+	<span class="token property">"password"</span><span class="token operator">:</span> <span class="token string">"abc"</span><span class="token punctuation">,</span>
+	<span class="token property">"token"</span><span class="token operator">:</span> <span class="token string">"***.***.***"</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>newName</code> 表示新用户名</li>
+<li><code>newPassword</code> 表示新密码</li>
+<li><code>newEmail</code> 表示新邮箱</li>
+<li><code>newPhoneNumber</code> 表示新号码</li>
+<li><code>newAvatar</code> 表示新头像</li>
+<li><code>password</code> 表示密码</li>
+<li><code>token</code> 表示 JWT 令牌</li>
+</ul>
+<p>没有修改的就不用包含进请求里。</p>
+<h4 id="响应-5">响应 </h4>
+<p>若 token 核对成功，状态码为 200 OK。</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+	<span class="token property">"code"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	<span class="token property">"info"</span><span class="token operator">:</span> <span class="token string">"Succeed"</span><span class="token punctuation">,</span>
+	<span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"/profile/&lt;userId&gt;"</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>url</code> 表示跳转 url</li>
+</ul>
+<h4 id="异常处理-5">异常处理 </h4>
+<p>所有异常响应格式均为：</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>  
+	<span class="token property">"code"</span><span class="token operator">:</span> *<span class="token punctuation">,</span>  
+	<span class="token property">"info"</span><span class="token operator">:</span> <span class="token string">"[error message]"</span>
+<span class="token punctuation">}</span>
+</code></pre><table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>错误码</th>
+<th>错误原因</th>
+<th>错误提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>401</td>
+<td>-3</td>
+<td>JWT 令牌错误或过期</td>
+<td>登录已失效，跳转至 /login</td>
+</tr>
+<tr>
+<td>403</td>
+<td>-4</td>
+<td>用户 ID 验证失败</td>
+<td>没有操作权限</td>
+</tr>
+<tr>
+<td>401</td>
+<td>-3</td>
+<td>密码错误</td>
+<td>验证失败，请重试</td>
+</tr>
+<tr>
+<td>404</td>
+<td>-1</td>
+<td>用户已注销或用户 ID 错误或 ID 不存在</td>
+<td>ID 错误，请重试</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="用户查找-searchuserid">用户查找 /search/<userid> </userid></h3>
+<h4 id="请求-6">请求 </h4>
+<p>使用 POST 方法 。</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+	<span class="token property">"searchId"</span><span class="token operator">:</span> <span class="token string">"targetId"</span><span class="token punctuation">,</span>
+	<span class="token property">"token"</span><span class="token operator">:</span> <span class="token string">"***.***.***"</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>searchId</code> 表示想要搜索的用户userId</li>
+<li><code>token</code> 表示 JWT 令牌</li>
+</ul>
+<h4 id="响应-6">响应 </h4>
+<p>若 token 核对成功，状态码为 200 OK，返回用户基本信息。</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+	<span class="token property">"code"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	<span class="token property">"info"</span><span class="token operator">:</span> <span class="token string">"Succeed"</span><span class="token punctuation">,</span>
+	<span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"2"</span><span class="token punctuation">,</span>
+	<span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Ace"</span>
+	<span class="token property">"avatar"</span><span class="token operator">:</span><span class="token string">"path/avt.jpg"</span>
+	<span class="token property">"isDeleted"</span><span class="token operator">:</span>False
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>id</code> 表示用户id</li>
+<li><code>name</code>表示用户名称</li>
+<li><code>email</code>表示用户邮箱</li>
+<li><code>phone</code>表示用户手机</li>
+<li><code>avatar</code>表示用户头像的储存路径</li>
+</ul>
+<h4 id="异常处理-6">异常处理 </h4>
+<p>所有异常响应格式均为：</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>  
+	<span class="token property">"code"</span><span class="token operator">:</span> *<span class="token punctuation">,</span>  
+	<span class="token property">"info"</span><span class="token operator">:</span> <span class="token string">"[error message]"</span><span class="token punctuation">,</span>
+	<span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"/newUrl"</span>
+<span class="token punctuation">}</span>
+</code></pre><table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>错误码</th>
+<th>错误原因</th>
+<th>错误提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>401</td>
+<td>-3</td>
+<td>JWT 令牌错误或过期</td>
+<td>登录已失效，跳转至 /login</td>
+</tr>
+<tr>
+<td>403</td>
+<td>-4</td>
+<td>用户名与原用户名重复</td>
+<td>用户名重复，请重试</td>
+</tr>
+<tr>
+<td>401</td>
+<td>-3</td>
+<td>密码错误</td>
+<td>验证失败，请重试</td>
+</tr>
+<tr>
+<td>404</td>
+<td>-1</td>
+<td>用户已注销或用户 ID 错误或 ID 不存在</td>
+<td>ID 错误，请重试</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="好友申请-friendsadd_friend">好友申请 /friends/add_friend </h3>
+<h4 id="post请求">POST请求 </h4>
+<p>发送好友申请。</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+	<span class="token property">"userId"</span><span class="token operator">:</span> <span class="token string">"userId"</span>
+	<span class="token property">"searchId"</span><span class="token operator">:</span> <span class="token string">"targetId"</span><span class="token punctuation">,</span>
+	<span class="token property">"message"</span><span class="token operator">:</span><span class="token string">"Aloha!"</span>
+	<span class="token property">"token"</span><span class="token operator">:</span> <span class="token string">"***.***.***"</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>id</code> 表示本人用户ID</li>
+<li><code>searchId</code> 表示想要添加的用户ID</li>
+<li><code>message</code> 表示打招呼的消息</li>
+<li><code>token</code> 表示 JWT 令牌</li>
+</ul>
+<h4 id="响应-7">响应 </h4>
+<p>若 token 核对成功，状态码为 200 OK。</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+	<span class="token property">"code"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	<span class="token property">"message"</span><span class="token operator">:</span> <span class="token string">"成功发送请求"</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="异常处理-7">异常处理 </h4>
+<p>所有异常响应格式均为：</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>  
+	<span class="token property">"code"</span><span class="token operator">:</span> *<span class="token punctuation">,</span>  
+	<span class="token property">"info"</span><span class="token operator">:</span> <span class="token string">"[error message]"</span>
+<span class="token punctuation">}</span>
+</code></pre><table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>错误码</th>
+<th>错误原因</th>
+<th>错误提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>401</td>
+<td>-3</td>
+<td>JWT 令牌错误或过期</td>
+<td>登录已失效，跳转至 /login</td>
+</tr>
+<tr>
+<td>404</td>
+<td>-1</td>
+<td>本人用户已注销或用户 ID 错误或 ID 不存在</td>
+<td>ID 错误，请重试</td>
+</tr>
+<tr>
+<td>404</td>
+<td>-1</td>
+<td>查找用户已注销或用户 ID 错误或 ID 不存在</td>
+<td>查找ID不存在，请重试</td>
+</tr>
+<tr>
+<td>403</td>
+<td>-4</td>
+<td>试图添加已存在好友</td>
+<td>已经是好友，请重试</td>
+</tr>
+<tr>
+<td>403</td>
+<td>-4</td>
+<td>试图添加自己为好友</td>
+<td>不可添加自己为好友</td>
+</tr>
+<tr>
+<td>403</td>
+<td>-4</td>
+<td>试图多次发送好友请求</td>
+<td>发送好友申请过于频繁</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="接受好友请求friendsaccept_friend">接受好友请求/friends/accept_friend </h3>
+<h4 id="请求-post">请求 POST </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+ <span class="token property">"senderId"</span><span class="token operator">:</span> <span class="token string">"alice"</span><span class="token punctuation">,</span>
+ <span class="token property">"receiverId"</span><span class="token operator">:</span> <span class="token string">"Bob"</span><span class="token punctuation">,</span>
+ <span class="token property">"token"</span><span class="token operator">:</span> <span class="token string">"***.***.***"</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="响应-8">响应 </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+	<span class="token property">"code"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	<span class="token property">"message"</span><span class="token operator">:</span> <span class="token string">"接受成功"</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="异常处理-8">异常处理 </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+	<span class="token property">"code"</span><span class="token operator">:</span>*<span class="token punctuation">,</span>
+	<span class="token property">"info"</span><span class="token operator">:</span> <span class="token string">"[error message]"</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre><table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>错误码</th>
+<th>提示信息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>401</td>
+<td>-3</td>
+<td>JWT 验证失败</td>
+</tr>
+<tr>
+<td>403</td>
+<td>-4</td>
+<td>已经是好友</td>
+</tr>
+<tr>
+<td>404</td>
+<td>-1</td>
+<td>用户不存在</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="好友请求列表-friendsmyrequestsuserid">好友请求列表 /friends/myrequests/<userid> </userid></h3>
+<h4 id="请求-get">请求 GET </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+	<span class="token property">"token"</span><span class="token operator">:</span> <span class="token string">"***.***.***"</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>id</code> 表示用户自身 ID</li>
+<li><code>token</code> 表示 JWT 令牌</li>
+</ul>
+<h4 id="响应-9">响应 </h4>
+<p>若 token 核对成功，状态码为 200 OK，返回用户基本信息。</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+	<span class="token property">"code"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	<span class="token property">"info"</span><span class="token operator">:</span> <span class="token string">"Succeed"</span><span class="token punctuation">,</span>
+	<span class="token property">"data"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+		<span class="token punctuation">{</span>
+			<span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"2"</span><span class="token punctuation">,</span>
+			<span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Ace"</span>
+			<span class="token property">"message"</span><span class="token operator">:</span> <span class="token string">"Hello"</span><span class="token punctuation">,</span>
+			<span class="token property">"status"</span><span class="token operator">:</span> True<span class="token punctuation">,</span>
+			<span class="token property">"sendTime"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
+			<span class="token property">"avatarUrl"</span><span class="token operator">:</span> <span class="token string">"path/avt1.jpg"</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+		<span class="token punctuation">{</span>
+			<span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"3"</span><span class="token punctuation">,</span>
+			<span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"bob"</span>
+			<span class="token property">"message"</span><span class="token operator">:</span> <span class="token string">"HI"</span><span class="token punctuation">,</span>
+			<span class="token property">"status"</span><span class="token operator">:</span> False<span class="token punctuation">,</span>
+			<span class="token property">"sendTime"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
+			<span class="token property">"avatarUrl"</span><span class="token operator">:</span> <span class="token string">"path/avt2.jpg"</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>data</code> 表示好友申请列表</li>
+<li><code>id</code> 表示用户id</li>
+<li><code>name</code>表示用户名称</li>
+<li><code>message</code> 表示发送请求的消息</li>
+<li><code>status</code> 表示申请状态，只能为 True or False(接受和未处理)</li>
+<li><code>avatarUrl</code>表示用户头像的储存路径</li>
+</ul>
+<h4 id="异常处理-9">异常处理 </h4>
+<p>所有异常响应格式均为：</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>  
+	<span class="token property">"code"</span><span class="token operator">:</span> *<span class="token punctuation">,</span>  
+	<span class="token property">"info"</span><span class="token operator">:</span> <span class="token string">"[error message]"</span>
+<span class="token punctuation">}</span>
+</code></pre><table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>错误码</th>
+<th>错误原因</th>
+<th>错误提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>401</td>
+<td>-3</td>
+<td>JWT 令牌错误或过期</td>
+<td>登录已失效，跳转至 /login</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="好友列表friendsmyfriendsuserid">好友列表/friends/myfriends/<userid> </userid></h3>
+<h4 id="get请求">GET请求 </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+	<span class="token property">"token"</span><span class="token operator">:</span> <span class="token string">"***.****.***"</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="响应-10">响应 </h4>
+<p>若成功</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+	<span class="token property">"code"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	<span class="token property">"info"</span><span class="token operator">:</span> <span class="token string">"Succeed"</span><span class="token punctuation">,</span>
+	<span class="token property">"data"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+		<span class="token punctuation">{</span>
+			<span class="token property">"userId"</span><span class="token operator">:</span> <span class="token string">"ace"</span><span class="token punctuation">,</span>
+			<span class="token property">"userName"</span><span class="token operator">:</span> <span class="token string">"Ace"</span><span class="token punctuation">,</span>
+			<span class="token property">"avatarUrl"</span><span class="token operator">:</span> <span class="token string">"xxx"</span><span class="token punctuation">,</span>
+			<span class="token property">"isDeleted"</span><span class="token operator">:</span> False<span class="token punctuation">,</span>
+			<span class="token property">"tag"</span><span class="token operator">:</span> <span class="token string">"同学"</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+		<span class="token punctuation">{</span>
+			<span class="token property">"userId"</span><span class="token operator">:</span> <span class="token string">"bob"</span><span class="token punctuation">,</span>
+			<span class="token property">"userName"</span><span class="token operator">:</span> <span class="token string">"bob"</span><span class="token punctuation">,</span>
+			<span class="token property">"avatarUrl"</span><span class="token operator">:</span> <span class="token string">"xxx"</span><span class="token punctuation">,</span>
+			<span class="token property">"isDeleted"</span><span class="token operator">:</span> False<span class="token punctuation">,</span>
+			<span class="token property">"tag"</span><span class="token operator">:</span> <span class="token string">"家人"</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><p>返回的data是一个list</p>
+<ul>
+<li><code>userId</code> 表示好友的用户Id</li>
+<li><code>userName</code>表示好友的用户名</li>
+<li><code>avatarUrl</code> 表示好友的头像</li>
+<li><code>isDeleted</code> 表示好友的账户状态(是否注销)</li>
+</ul>
+<hr>
+<h3 id="删除好友-friendsdelete_friend">删除好友 /friends/delete_friend </h3>
+<h4 id="post请求-1">POST请求 </h4>
+<p>从好友列表中删除好友。</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+	<span class="token property">"userId"</span><span class="token operator">:</span> <span class="token string">"userId"</span>
+	<span class="token property">"friendId"</span><span class="token operator">:</span> <span class="token string">"targetId"</span><span class="token punctuation">,</span>
+	<span class="token property">"token"</span><span class="token operator">:</span> <span class="token string">"***.***.***"</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>userId</code> 表示本人用户ID</li>
+<li><code>friendId</code> 表示想要删除的用户ID</li>
+<li><code>token</code> 表示 JWT 令牌</li>
+</ul>
+<h4 id="响应-11">响应 </h4>
+<p>若 token 核对成功，状态码为 200 OK。</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+	<span class="token property">"code"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	<span class="token property">"message"</span><span class="token operator">:</span> <span class="token string">"删除成功"</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="异常处理-10">异常处理 </h4>
+<p>所有异常响应格式均为：</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>  
+	<span class="token property">"code"</span><span class="token operator">:</span> *<span class="token punctuation">,</span>  
+	<span class="token property">"info"</span><span class="token operator">:</span> <span class="token string">"[error message]"</span>
+<span class="token punctuation">}</span>
+</code></pre><table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>错误码</th>
+<th>错误原因</th>
+<th>错误提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>401</td>
+<td>-3</td>
+<td>JWT 令牌错误或过期</td>
+<td>登录已失效，跳转至 /login</td>
+</tr>
+<tr>
+<td>404</td>
+<td>-1</td>
+<td>本人用户已注销或用户 ID 错误或 ID 不存在</td>
+<td>ID 错误，请重试</td>
+</tr>
+<tr>
+<td>404</td>
+<td>-1</td>
+<td>查找用户已注销或用户 ID 错误或 ID 不存在</td>
+<td>好友ID不存在，请重试</td>
+</tr>
+<tr>
+<td>404</td>
+<td>-1</td>
+<td>对方不是你的好友</td>
+<td>好友关系不存在</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="打标签-friendsadd_tag">打标签 /friends/add_tag </h3>
+<h4 id="post请求-2">POST请求 </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+	<span class="token property">"userId"</span><span class="token operator">:</span> <span class="token string">"alice"</span><span class="token punctuation">,</span>
+	<span class="token property">"friendId"</span><span class="token operator">:</span> <span class="token string">"bob"</span><span class="token punctuation">,</span>
+	<span class="token property">"tag"</span><span class="token operator">:</span> <span class="token string">"同学"</span><span class="token punctuation">,</span>
+	<span class="token property">"token"</span><span class="token operator">:</span> <span class="token string">"***.***.***"</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="响应-12">响应 </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+	<span class="token property">"code"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	<span class="token property">"message"</span><span class="token operator">:</span> <span class="token string">"tag添加成功"</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="异常处理-11">异常处理 </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>  
+	<span class="token property">"code"</span><span class="token operator">:</span> *<span class="token punctuation">,</span>  
+	<span class="token property">"info"</span><span class="token operator">:</span> <span class="token string">"[error message]"</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre><table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>错误码</th>
+<th>错误提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>401</td>
+<td>-3</td>
+<td>JWT 验证失败</td>
+</tr>
+<tr>
+<td>404</td>
+<td>-1</td>
+<td>好友已注销</td>
+</tr>
+<tr>
+<td>404</td>
+<td>-1</td>
+<td>好友关系不存在</td>
+</tr>
+<tr>
+<td>400</td>
+<td>-2</td>
+<td>tag过长</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="收发消息chatmassages">收发消息/chat/massages </h3>
+<h4 id="post请求-3">POST请求 </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+	<span class="token property">"userId"</span><span class="token operator">:</span> <span class="token string">"alice"</span><span class="token punctuation">,</span>
+	<span class="token property">"conversationId"</span><span class="token operator">:</span> <span class="token string">"bob"</span><span class="token punctuation">,</span>
+	<span class="token property">"content"</span><span class="token operator">:</span> <span class="token string">"同学"</span>，
+	<span class="token property">"replyId"</span><span class="token operator">:</span> <span class="token string">"bob"</span>，
+	<span class="token property">"token"</span><span class="token operator">:</span> <span class="token string">"***.***.***"</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="响应-13">响应 </h4>
+<p>若 token 核对成功，状态码为 200 OK。</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+	<span class="token property">"code"</span><span class="token operator">:</span> <span class="token number">0</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="异常处理-12">异常处理 </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>  
+	<span class="token property">"code"</span><span class="token operator">:</span> *<span class="token punctuation">,</span>  
+	<span class="token property">"info"</span><span class="token operator">:</span> <span class="token string">"[error message]"</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre><table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>错误码</th>
+<th>错误提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>401</td>
+<td>-3</td>
+<td>JWT 验证失败</td>
+</tr>
+<tr>
+<td>400</td>
+<td>-2</td>
+<td>会话不存在</td>
+</tr>
+<tr>
+<td>400</td>
+<td>-2</td>
+<td>用户不存在或已注销</td>
+</tr>
+<tr>
+<td>403</td>
+<td>-4</td>
+<td>用户不在会话中</td>
+</tr>
+<tr>
+<td>400</td>
+<td>-2</td>
+<td>好友已注销</td>
+</tr>
+<tr>
+<td>400</td>
+<td>-2</td>
+<td>回复原消息不存在</td>
+</tr>
+</tbody>
+</table>
+<h4 id="get请求-1">GET请求 </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+	<span class="token property">"userId"</span><span class="token operator">:</span> <span class="token string">"alice"</span><span class="token punctuation">,</span>
+	<span class="token property">"conversationId"</span><span class="token operator">:</span> <span class="token string">"bob"</span><span class="token punctuation">,</span>
+	<span class="token property">"after"</span><span class="token operator">:</span> <span class="token string">"0"</span><span class="token punctuation">,</span>
+	<span class="token property">"limit"</span><span class="token operator">:</span> <span class="token string">"100"</span><span class="token punctuation">,</span>
+	<span class="token property">"afterDatetime"</span><span class="token operator">:</span> <span class="token string">"***"</span><span class="token punctuation">,</span>
+	<span class="token property">"token"</span><span class="token operator">:</span><span class="token string">"***.***.***"</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="响应-14">响应 </h4>
+<pre data-role="codeBlock" data-info="jsx" class="language-jsx jsx"><code><span class="token punctuation">{</span>
+	<span class="token string-property property">"code"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	<span class="token string-property property">"info"</span><span class="token operator">:</span> <span class="token string">"Succeed"</span><span class="token punctuation">,</span>
+	<span class="token string-property property">"messages"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"1"</span><span class="token punctuation">,</span><span class="token string">"2"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+	<span class="token string-property property">"hasNext"</span><span class="token operator">:</span> <span class="token maybe-class-name">False</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="异常处理-13">异常处理 </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>  
+	<span class="token property">"code"</span><span class="token operator">:</span> *<span class="token punctuation">,</span>  
+	<span class="token property">"info"</span><span class="token operator">:</span> <span class="token string">"[error message]"</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre><table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>错误码</th>
+<th>错误提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>401</td>
+<td>-3</td>
+<td>JWT 验证失败</td>
+</tr>
+<tr>
+<td>400</td>
+<td>-2</td>
+<td>用户不存在或已注销</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="获取会话列表-chatconversations">获取会话列表 /chat/conversations </h3>
+<h4 id="get-请求">GET 请求 </h4>
+<p>获取用户的会话列表。</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+	<span class="token property">"userId"</span><span class="token operator">:</span> <span class="token string">"12"</span><span class="token punctuation">,</span>
+	<span class="token property">"id"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"1"</span><span class="token punctuation">,</span><span class="token string">"2"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+	<span class="token property">"token"</span><span class="token operator">:</span> <span class="token string">"***.***.***"</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>userId</code> 为当前用户ID</li>
+<li><code>id</code> 为需要拉取的会话ID列表，可选</li>
+</ul>
+<h4 id="响应-15">响应 </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"conversations"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"xxx"</span><span class="token punctuation">,</span>
+            <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"private_chat"</span><span class="token punctuation">,</span>
+            <span class="token property">"avatarUrl"</span><span class="token operator">:</span> <span class="token string">"https://..."</span><span class="token punctuation">,</span>
+            <span class="token property">"displayName"</span><span class="token operator">:</span> <span class="token string">"John Doe"</span><span class="token punctuation">,</span>
+            <span class="token property">"updatedAt"</span><span class="token operator">:</span> <span class="token string">"2023-05-23T12:34:56Z"</span><span class="token punctuation">,</span>
+            <span class="token property">"unreadCount"</span><span class="token operator">:</span> <span class="token number">5</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"yyy"</span><span class="token punctuation">,</span>
+            <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"group_chat"</span><span class="token punctuation">,</span>
+            <span class="token property">"avatarUrl"</span><span class="token operator">:</span> <span class="token string">"https://..."</span><span class="token punctuation">,</span>
+            <span class="token property">"displayName"</span><span class="token operator">:</span> <span class="token string">"Group Chat"</span><span class="token punctuation">,</span>
+            <span class="token property">"updatedAt"</span><span class="token operator">:</span> <span class="token string">"2023-05-22T11:22:33Z"</span><span class="token punctuation">,</span>
+            <span class="token property">"unreadCount"</span><span class="token operator">:</span> <span class="token number">0</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+</code></pre><ul>
+<li><code>id</code> 为会话ID</li>
+<li><code>type</code> 为会话类型，<code>private_chat</code> 或 <code>group_chat</code></li>
+<li><code>avatarUrl</code> 为会话头像URL</li>
+<li><code>displayName</code> 为会话名称</li>
+<li><code>updatedAt</code> 为最后更新时间</li>
+<li><code>unreadCount</code> 为未读消息数</li>
+</ul>
+<h4 id="异常处理-14">异常处理 </h4>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>错误码</th>
+<th>错误提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>401</td>
+<td>-3</td>
+<td>JWT 验证失败</td>
+</tr>
+<tr>
+<td>400</td>
+<td>-2</td>
+<td>用户不存在</td>
+</tr>
+</tbody>
+</table>
+<h3 id="创建会话-chatconversations">创建会话 /chat/conversations </h3>
+<h4 id="post-请求">POST 请求 </h4>
+<p>创建一个新的会话。</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"userId"</span><span class="token operator">:</span> <span class="token string">"xxx"</span><span class="token punctuation">,</span>
+    <span class="token property">"memberIds"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"xxx"</span><span class="token punctuation">,</span> <span class="token string">"yyy"</span><span class="token punctuation">,</span> <span class="token string">"zzz"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"token"</span><span class="token operator">:</span> <span class="token string">"xxx.xxx.xxx"</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>userId</code> 为创建者ID</li>
+<li><code>memberIds</code> 为会话成员ID列表</li>
+<li><code>token</code> 为JWT令牌</li>
+</ul>
+<h4 id="响应-16">响应 </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"xxx"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"group_chat"</span><span class="token punctuation">,</span>
+    <span class="token property">"avatarUrl"</span><span class="token operator">:</span> <span class="token string">"https://..."</span><span class="token punctuation">,</span>
+    <span class="token property">"displayName"</span><span class="token operator">:</span> <span class="token string">"Group Chat"</span><span class="token punctuation">,</span>
+    <span class="token property">"updatedAt"</span><span class="token operator">:</span> <span class="token string">"2023-05-23T12:34:56Z"</span><span class="token punctuation">,</span>
+    <span class="token property">"unreadCount"</span><span class="token operator">:</span> <span class="token number">0</span>
+<span class="token punctuation">}</span>
+
+</code></pre><h4 id="异常处理-15">异常处理 </h4>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>错误码</th>
+<th>错误提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>401</td>
+<td>-3</td>
+<td>JWT 验证失败</td>
+</tr>
+<tr>
+<td>400</td>
+<td>-2</td>
+<td>用户不存在</td>
+</tr>
+<tr>
+<td>400</td>
+<td>-2</td>
+<td>群聊人数过少</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="删除消息-chatdelete_message"><strong>删除消息 /chat/delete_message</strong> </h3>
+<h4 id="post-请求-1"><strong>POST 请求</strong> </h4>
+<p>删除指定消息。</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"userId"</span><span class="token operator">:</span> <span class="token string">"xxx"</span><span class="token punctuation">,</span>
+    <span class="token property">"messageId"</span><span class="token operator">:</span> <span class="token number">123</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>userId</code>&nbsp;为当前用户ID</li>
+<li><code>messageId</code>&nbsp;为需要删除的消息ID</li>
+</ul>
+<h4 id="响应-17"><strong>响应</strong> </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"info"</span><span class="token operator">:</span> <span class="token string">"删除成功"</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="异常处理-16"><strong>异常处理</strong> </h4>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>错误码</th>
+<th>错误提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>401</td>
+<td>-3</td>
+<td>JWT 验证失败</td>
+</tr>
+<tr>
+<td>400</td>
+<td>-2</td>
+<td>消息不存在</td>
+</tr>
+<tr>
+<td>403</td>
+<td>-4</td>
+<td>消息已删除</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="标记消息已读-chatread_message"><strong>标记消息已读 /chat/read_message</strong> </h3>
+<h4 id="post-请求-2"><strong>POST 请求</strong> </h4>
+<p>标记指定会话中的未读消息为已读。</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"userId"</span><span class="token operator">:</span> <span class="token string">"xxx"</span><span class="token punctuation">,</span>
+    <span class="token property">"conversationId"</span><span class="token operator">:</span> <span class="token number">123</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>userId</code>&nbsp;为当前用户ID</li>
+<li><code>conversationId</code>&nbsp;为需要标记的会话ID</li>
+</ul>
+<h4 id="响应-18"><strong>响应</strong> </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"info"</span><span class="token operator">:</span> <span class="token string">"已读成功"</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="异常处理-17"><strong>异常处理</strong> </h4>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>错误码</th>
+<th>错误提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>401</td>
+<td>-3</td>
+<td>JWT 验证失败</td>
+</tr>
+<tr>
+<td>400</td>
+<td>-2</td>
+<td>用户不存在</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="获取会话id列表-chatget_conversation_ids"><strong>获取会话ID列表 /chat/get_conversation_ids</strong> </h3>
+<h4 id="get-请求-1"><strong>GET 请求</strong> </h4>
+<p>获取指定用户所参与的所有会话 ID。</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+	<span class="token property">"userId"</span><span class="token operator">:</span> <span class="token string">"123"</span><span class="token punctuation">,</span>
+	<span class="token property">"token"</span><span class="token operator">:</span> <span class="token string">"***.***.***"</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>userId</code>&nbsp;为当前用户ID</li>
+</ul>
+<h4 id="响应-19"><strong>响应</strong> </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"conversationIds"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> ...<span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>conversationIds</code>&nbsp;为用户所参与的会话 ID 列表</li>
+</ul>
+<h4 id="异常处理-18"><strong>异常处理</strong> </h4>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>错误码</th>
+<th>错误提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>401</td>
+<td>-3</td>
+<td>JWT 验证失败</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="获取会话未读消息数量-chatget_unread_count"><strong>获取会话未读消息数量 /chat/get_unread_count</strong> </h3>
+<h4 id="get-请求-2"><strong>GET 请求</strong> </h4>
+<p>获取指定用户在指定会话中的未读消息数量。</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+	<span class="token property">"userId"</span><span class="token operator">:</span> <span class="token string">"123"</span><span class="token punctuation">,</span>
+	<span class="token property">"conversationId"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>userId</code>&nbsp;为当前用户ID</li>
+<li><code>conversationId</code>&nbsp;为要查询的会话ID</li>
+</ul>
+<h4 id="响应-20"><strong>响应</strong> </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"count"</span><span class="token operator">:</span> <span class="token number">5</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>count</code>&nbsp;为指定会话中当前用户的未读消息数量</li>
+</ul>
+<h4 id="异常处理-19"><strong>异常处理</strong> </h4>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>错误码</th>
+<th>错误提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>401</td>
+<td>-3</td>
+<td>JWT 验证失败</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="上传群组消息通知-chatupload_notification"><strong>上传群组消息通知 /chat/upload_notification</strong> </h3>
+<h4 id="post-请求-3"><strong>POST 请求</strong> </h4>
+<p>上传一条新的群组消息通知。</p>
+<h4 id="请求参数"><strong>请求参数</strong> </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"userId"</span><span class="token operator">:</span> <span class="token string">"xxx"</span><span class="token punctuation">,</span>
+    <span class="token property">"groupId"</span><span class="token operator">:</span> <span class="token number">123</span><span class="token punctuation">,</span>
+    <span class="token property">"content"</span><span class="token operator">:</span> <span class="token string">"通知的内容"</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>userId</code>: 当前用户的ID</li>
+<li><code>groupId</code>: 要发送通知的群组ID</li>
+<li><code>content</code>: 通知的内容</li>
+</ul>
+<h4 id="响应-21"><strong>响应</strong> </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token number">456</span><span class="token punctuation">,</span>
+    <span class="token property">"conversation"</span><span class="token operator">:</span> <span class="token number">123</span><span class="token punctuation">,</span>
+    <span class="token property">"content"</span><span class="token operator">:</span> <span class="token string">"通知的内容"</span><span class="token punctuation">,</span>
+    <span class="token property">"userId"</span><span class="token operator">:</span> <span class="token string">"xxx"</span><span class="token punctuation">,</span>
+    <span class="token property">"userName"</span><span class="token operator">:</span> <span class="token string">"用户名"</span><span class="token punctuation">,</span>
+    <span class="token property">"avatarUrl"</span><span class="token operator">:</span> <span class="token string">"头像URL"</span><span class="token punctuation">,</span>
+    <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token string">"2023-05-23T12:00:00Z"</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>id</code>: 新创建的通知ID</li>
+<li><code>conversation</code>: 关联的群组ID</li>
+<li><code>content</code>: 通知的内容</li>
+<li><code>userId</code>: 发送通知的用户ID</li>
+<li><code>userName</code>: 发送通知的用户名</li>
+<li><code>avatarUrl</code>: 发送通知的用户头像URL</li>
+<li><code>timestamp</code>: 通知创建的时间戳</li>
+</ul>
+<h4 id="异常处理-20"><strong>异常处理</strong> </h4>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>错误码</th>
+<th>错误提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>400</td>
+<td>-2</td>
+<td>用户不存在</td>
+</tr>
+<tr>
+<td>403</td>
+<td>-4</td>
+<td>权限不足</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="设置群组群主-chatset_host"><strong>设置群组群主 /chat/set_host</strong> </h3>
+<h4 id="post-请求-4"><strong>POST 请求</strong> </h4>
+<p>设置指定群组的新群主。</p>
+<h4 id="请求参数-1"><strong>请求参数</strong> </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"oldHostId"</span><span class="token operator">:</span> <span class="token string">"xxx"</span><span class="token punctuation">,</span>
+    <span class="token property">"newHostId"</span><span class="token operator">:</span> <span class="token string">"yyy"</span><span class="token punctuation">,</span>
+    <span class="token property">"groupId"</span><span class="token operator">:</span> <span class="token number">123</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>oldHostId</code>: 当前群主的ID</li>
+<li><code>newHostId</code>: 新群主的ID</li>
+<li><code>groupId</code>: 要修改群主的群组ID</li>
+</ul>
+<h4 id="响应-22"><strong>响应</strong> </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token number">123</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"群组名称"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"group_chat"</span><span class="token punctuation">,</span>
+    <span class="token property">"avatarUrl"</span><span class="token operator">:</span> <span class="token string">"群组头像URL"</span><span class="token punctuation">,</span>
+    <span class="token property">"host"</span><span class="token operator">:</span> <span class="token string">"yyy"</span><span class="token punctuation">,</span>
+    <span class="token property">"admins"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"aaa"</span><span class="token punctuation">,</span> <span class="token string">"bbb"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"members"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"xxx"</span><span class="token punctuation">,</span> <span class="token string">"yyy"</span><span class="token punctuation">,</span> <span class="token string">"aaa"</span><span class="token punctuation">,</span> <span class="token string">"bbb"</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>id</code>: 群组ID</li>
+<li><code>name</code>: 群组名称</li>
+<li><code>type</code>: 群组类型</li>
+<li><code>avatarUrl</code>: 群组头像URL</li>
+<li><code>host</code>: 新的群主ID</li>
+<li><code>admins</code>: 群组管理员ID列表</li>
+<li><code>members</code>: 群组成员ID列表</li>
+</ul>
+<h4 id="异常处理-21"><strong>异常处理</strong> </h4>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>错误码</th>
+<th>错误提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>400</td>
+<td>-2</td>
+<td>用户不存在 / 会话不存在</td>
+</tr>
+<tr>
+<td>401</td>
+<td>-3</td>
+<td>JWT 验证失败</td>
+</tr>
+<tr>
+<td>403</td>
+<td>-4</td>
+<td>权限不足 / 新群主不能与旧群主相同</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="设置群组管理员-chatset_admin"><strong>设置群组管理员 /chat/set_admin</strong> </h3>
+<h4 id="post-请求-5"><strong>POST 请求</strong> </h4>
+<p>为指定群组设置新的管理员。</p>
+<h4 id="请求参数-2"><strong>请求参数</strong> </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"hostId"</span><span class="token operator">:</span> <span class="token string">"xxx"</span><span class="token punctuation">,</span>
+    <span class="token property">"groupId"</span><span class="token operator">:</span> <span class="token number">123</span><span class="token punctuation">,</span>
+    <span class="token property">"adminId"</span><span class="token operator">:</span> <span class="token string">"yyy"</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>hostId</code>: 当前群主的ID</li>
+<li><code>groupId</code>: 要设置管理员的群组ID</li>
+<li><code>adminId</code>: 要设置为管理员的用户ID</li>
+</ul>
+<h4 id="响应-23"><strong>响应</strong> </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token number">123</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"群组名称"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"group_chat"</span><span class="token punctuation">,</span>
+    <span class="token property">"avatarUrl"</span><span class="token operator">:</span> <span class="token string">"群组头像URL"</span><span class="token punctuation">,</span>
+    <span class="token property">"host"</span><span class="token operator">:</span> <span class="token string">"xxx"</span><span class="token punctuation">,</span>
+    <span class="token property">"admins"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"xxx"</span><span class="token punctuation">,</span> <span class="token string">"yyy"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"members"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"xxx"</span><span class="token punctuation">,</span> <span class="token string">"yyy"</span><span class="token punctuation">,</span> <span class="token string">"aaa"</span><span class="token punctuation">,</span> <span class="token string">"bbb"</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>id</code>: 群组ID</li>
+<li><code>name</code>: 群组名称</li>
+<li><code>type</code>: 群组类型</li>
+<li><code>avatarUrl</code>: 群组头像URL</li>
+<li><code>host</code>: 群组群主ID</li>
+<li><code>admins</code>: 群组管理员ID列表</li>
+<li><code>members</code>: 群组成员ID列表</li>
+</ul>
+<h4 id="异常处理-22"><strong>异常处理</strong> </h4>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>错误码</th>
+<th>错误提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>400</td>
+<td>-2</td>
+<td>用户不存在 / 会话不存在</td>
+</tr>
+<tr>
+<td>401</td>
+<td>-3</td>
+<td>JWT 验证失败</td>
+</tr>
+<tr>
+<td>403</td>
+<td>-4</td>
+<td>权限不足 / 权限已存在</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="移除群组管理员-chatremove_admin"><strong>移除群组管理员 /chat/remove_admin</strong> </h3>
+<h4 id="post-请求-6"><strong>POST 请求</strong> </h4>
+<p>移除指定群组的管理员。</p>
+<h4 id="请求参数-3"><strong>请求参数</strong> </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"hostId"</span><span class="token operator">:</span> <span class="token string">"xxx"</span><span class="token punctuation">,</span>
+    <span class="token property">"groupId"</span><span class="token operator">:</span> <span class="token number">123</span><span class="token punctuation">,</span>
+    <span class="token property">"adminId"</span><span class="token operator">:</span> <span class="token string">"yyy"</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>hostId</code>: 当前群主的ID</li>
+<li><code>groupId</code>: 要移除管理员的群组ID</li>
+<li><code>adminId</code>: 要移除管理员权限的用户ID</li>
+</ul>
+<h4 id="响应-24"><strong>响应</strong> </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token number">123</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"群组名称"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"group_chat"</span><span class="token punctuation">,</span>
+    <span class="token property">"avatarUrl"</span><span class="token operator">:</span> <span class="token string">"群组头像URL"</span><span class="token punctuation">,</span>
+    <span class="token property">"host"</span><span class="token operator">:</span> <span class="token string">"xxx"</span><span class="token punctuation">,</span>
+    <span class="token property">"admins"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"xxx"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"members"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"xxx"</span><span class="token punctuation">,</span> <span class="token string">"yyy"</span><span class="token punctuation">,</span> <span class="token string">"aaa"</span><span class="token punctuation">,</span> <span class="token string">"bbb"</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>id</code>: 群组ID</li>
+<li><code>name</code>: 群组名称</li>
+<li><code>type</code>: 群组类型</li>
+<li><code>avatarUrl</code>: 群组头像URL</li>
+<li><code>host</code>: 群组群主ID</li>
+<li><code>admins</code>: 群组管理员ID列表</li>
+<li><code>members</code>: 群组成员ID列表</li>
+</ul>
+<h4 id="异常处理-23"><strong>异常处理</strong> </h4>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>错误码</th>
+<th>错误提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>400</td>
+<td>-2</td>
+<td>用户不存在 / 会话不存在</td>
+</tr>
+<tr>
+<td>401</td>
+<td>-3</td>
+<td>JWT 验证失败</td>
+</tr>
+<tr>
+<td>403</td>
+<td>-4</td>
+<td>权限不足 / 权限不存在</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="踢出群组成员-chatkick_member"><strong>踢出群组成员 /chat/kick_member</strong> </h3>
+<h4 id="post-请求-7"><strong>POST 请求</strong> </h4>
+<p>将指定成员从群组中踢出。</p>
+<h4 id="请求参数-4"><strong>请求参数</strong> </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"opId"</span><span class="token operator">:</span> <span class="token string">"xxx"</span><span class="token punctuation">,</span>
+    <span class="token property">"groupId"</span><span class="token operator">:</span> <span class="token number">123</span><span class="token punctuation">,</span>
+    <span class="token property">"memberId"</span><span class="token operator">:</span> <span class="token string">"yyy"</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>opId</code>: 执行踢出操作的用户ID</li>
+<li><code>groupId</code>: 要踢出成员的群组ID</li>
+<li><code>memberId</code>: 要踢出的成员ID</li>
+</ul>
+<h4 id="响应-25"><strong>响应</strong> </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token number">123</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"群组名称"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"group_chat"</span><span class="token punctuation">,</span>
+    <span class="token property">"avatarUrl"</span><span class="token operator">:</span> <span class="token string">"群组头像URL"</span><span class="token punctuation">,</span>
+    <span class="token property">"host"</span><span class="token operator">:</span> <span class="token string">"xxx"</span><span class="token punctuation">,</span>
+    <span class="token property">"admins"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"xxx"</span><span class="token punctuation">,</span> <span class="token string">"aaa"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"members"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"xxx"</span><span class="token punctuation">,</span> <span class="token string">"aaa"</span><span class="token punctuation">,</span> <span class="token string">"bbb"</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>id</code>: 群组ID</li>
+<li><code>name</code>: 群组名称</li>
+<li><code>type</code>: 群组类型</li>
+<li><code>avatarUrl</code>: 群组头像URL</li>
+<li><code>host</code>: 群组群主ID</li>
+<li><code>admins</code>: 群组管理员ID列表</li>
+<li><code>members</code>: 群组成员ID列表</li>
+</ul>
+<h4 id="异常处理-24"><strong>异常处理</strong> </h4>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>错误码</th>
+<th>错误提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>400</td>
+<td>-2</td>
+<td>用户不存在 / 群聊不存在</td>
+</tr>
+<tr>
+<td>401</td>
+<td>-3</td>
+<td>JWT 验证失败</td>
+</tr>
+<tr>
+<td>403</td>
+<td>-4</td>
+<td>权限不足</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="退出群组-chatexit_group"><strong>退出群组 /chat/exit_group</strong> </h3>
+<h4 id="post-请求-8"><strong>POST 请求</strong> </h4>
+<p>用户退出指定的群组。</p>
+<h4 id="请求参数-5"><strong>请求参数</strong> </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"userId"</span><span class="token operator">:</span> <span class="token string">"xxx"</span><span class="token punctuation">,</span>
+    <span class="token property">"groupId"</span><span class="token operator">:</span> <span class="token number">123</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>userId</code>: 要退出群组的用户ID</li>
+<li><code>groupId</code>: 要退出的群组ID</li>
+</ul>
+<h4 id="响应-26"><strong>响应</strong> </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token number">123</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"群组名称"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"group_chat"</span><span class="token punctuation">,</span>
+    <span class="token property">"avatarUrl"</span><span class="token operator">:</span> <span class="token string">"群组头像URL"</span><span class="token punctuation">,</span>
+    <span class="token property">"host"</span><span class="token operator">:</span> <span class="token string">"xxx"</span><span class="token punctuation">,</span>
+    <span class="token property">"admins"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"xxx"</span><span class="token punctuation">,</span> <span class="token string">"aaa"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"members"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"xxx"</span><span class="token punctuation">,</span> <span class="token string">"aaa"</span><span class="token punctuation">,</span> <span class="token string">"bbb"</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>id</code>: 群组ID</li>
+<li><code>name</code>: 群组名称</li>
+<li><code>type</code>: 群组类型</li>
+<li><code>avatarUrl</code>: 群组头像URL</li>
+<li><code>host</code>: 群组群主ID</li>
+<li><code>admins</code>: 群组管理员ID列表</li>
+<li><code>members</code>: 群组成员ID列表</li>
+</ul>
+<h4 id="异常处理-25"><strong>异常处理</strong> </h4>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>错误码</th>
+<th>错误提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>400</td>
+<td>-2</td>
+<td>用户不存在 / 群聊不存在</td>
+</tr>
+<tr>
+<td>403</td>
+<td>-4</td>
+<td>权限不足</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="邀请成员加入群组-chatinvite_member"><strong>邀请成员加入群组 /chat/invite_member</strong> </h3>
+<h4 id="post-请求-9"><strong>POST 请求</strong> </h4>
+<p>邀请指定的用户加入群组。</p>
+<h4 id="请求参数-6"><strong>请求参数</strong> </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"opId"</span><span class="token operator">:</span> <span class="token string">"xxx"</span><span class="token punctuation">,</span>
+    <span class="token property">"groupId"</span><span class="token operator">:</span> <span class="token number">123</span><span class="token punctuation">,</span>
+    <span class="token property">"memberIds"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"yyy"</span><span class="token punctuation">,</span> <span class="token string">"zzz"</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>opId</code>: 执行邀请操作的用户ID</li>
+<li><code>groupId</code>: 要邀请成员加入的群组ID</li>
+<li><code>memberIds</code>: 要邀请加入的用户ID列表</li>
+</ul>
+<h4 id="响应-27"><strong>响应</strong> </h4>
+<h4 id="1-发送邀请"><strong>1. 发送邀请</strong> </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">"sender"</span><span class="token operator">:</span> <span class="token string">"xxx"</span><span class="token punctuation">,</span>
+    <span class="token property">"receiver"</span><span class="token operator">:</span> <span class="token string">"yyy"</span><span class="token punctuation">,</span>
+    <span class="token property">"conversation"</span><span class="token operator">:</span> <span class="token number">123</span><span class="token punctuation">,</span>
+    <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token string">"2023-05-24T05:07:58.273829Z"</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>id</code>: 邀请ID</li>
+<li><code>sender</code>: 邀请发送者ID</li>
+<li><code>receiver</code>: 被邀请者ID</li>
+<li><code>conversation</code>: 所属群组ID</li>
+<li><code>timestamp</code>: 邀请发送时间</li>
+</ul>
+<h4 id="2-成员加入群组"><strong>2. 成员加入群组</strong> </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token number">123</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"群组名称"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"group_chat"</span><span class="token punctuation">,</span>
+    <span class="token property">"avatarUrl"</span><span class="token operator">:</span> <span class="token string">"群组头像URL"</span><span class="token punctuation">,</span>
+    <span class="token property">"host"</span><span class="token operator">:</span> <span class="token string">"xxx"</span><span class="token punctuation">,</span>
+    <span class="token property">"admins"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"xxx"</span><span class="token punctuation">,</span> <span class="token string">"aaa"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"members"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"xxx"</span><span class="token punctuation">,</span> <span class="token string">"aaa"</span><span class="token punctuation">,</span> <span class="token string">"bbb"</span><span class="token punctuation">,</span> <span class="token string">"yyy"</span><span class="token punctuation">,</span> <span class="token string">"zzz"</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>id</code>: 群组ID</li>
+<li><code>name</code>: 群组名称</li>
+<li><code>type</code>: 群组类型</li>
+<li><code>avatarUrl</code>: 群组头像URL</li>
+<li><code>host</code>: 群组群主ID</li>
+<li><code>admins</code>: 群组管理员ID列表</li>
+<li><code>members</code>: 群组成员ID列表</li>
+</ul>
+<h4 id="异常处理-26"><strong>异常处理</strong> </h4>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>错误码</th>
+<th>错误提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>400</td>
+<td>-2</td>
+<td>用户不存在 / 群聊不存在 / 邀请对象账户不存在</td>
+</tr>
+<tr>
+<td>401</td>
+<td>-3</td>
+<td>JWT 验证失败</td>
+</tr>
+<tr>
+<td>403</td>
+<td>-4</td>
+<td>邀请对象不能为空 / 成员已在群里 / 权限不足</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="获取群组邀请-chatgroup_requestsuserid"><strong>获取群组邀请 /chat/group_requests/<userid></userid></strong> </h3>
+<h4 id="get-请求-3"><strong>GET 请求</strong> </h4>
+<p>获取指定用户的未处理的群组邀请列表。</p>
+<h4 id="url-参数"><strong>URL 参数</strong> </h4>
+<ul>
+<li><code>userId</code>: 要查询邀请的用户ID</li>
+</ul>
+<h4 id="响应-28"><strong>响应</strong> </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+        <span class="token property">"id"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+        <span class="token property">"sender"</span><span class="token operator">:</span> <span class="token string">"xxx"</span><span class="token punctuation">,</span>
+        <span class="token property">"receiver"</span><span class="token operator">:</span> <span class="token string">"yyy"</span><span class="token punctuation">,</span>
+        <span class="token property">"conversation"</span><span class="token operator">:</span> <span class="token number">123</span><span class="token punctuation">,</span>
+        <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token string">"2023-05-24T05:07:58.273829Z"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+        <span class="token property">"id"</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+        <span class="token property">"sender"</span><span class="token operator">:</span> <span class="token string">"aaa"</span><span class="token punctuation">,</span>
+        <span class="token property">"receiver"</span><span class="token operator">:</span> <span class="token string">"yyy"</span><span class="token punctuation">,</span>
+        <span class="token property">"conversation"</span><span class="token operator">:</span> <span class="token number">456</span><span class="token punctuation">,</span>
+        <span class="token property">"timestamp"</span><span class="token operator">:</span> <span class="token string">"2023-05-25T10:15:30.654321Z"</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre><ul>
+<li><code>id</code>: 邀请ID</li>
+<li><code>sender</code>: 邀请发送者ID</li>
+<li><code>receiver</code>: 被邀请者ID</li>
+<li><code>conversation</code>: 所属群组ID</li>
+<li><code>timestamp</code>: 邀请发送时间</li>
+</ul>
+<h4 id="异常处理-27"><strong>异常处理</strong> </h4>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>错误码</th>
+<th>错误提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>401</td>
+<td>-3</td>
+<td>JWT 验证失败</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="接受群组邀请-chataccept_group_invitation"><strong>接受群组邀请 /chat/accept_group_invitation</strong> </h3>
+<h4 id="post-请求-10"><strong>POST 请求</strong> </h4>
+<p>接受指定的群组邀请，加入该群组。</p>
+<h4 id="请求参数-7"><strong>请求参数</strong> </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"userId"</span><span class="token operator">:</span> <span class="token string">"xxx"</span><span class="token punctuation">,</span>
+    <span class="token property">"invitationId"</span><span class="token operator">:</span> <span class="token number">123</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>userId</code>: 接受邀请的用户ID</li>
+<li><code>invitationId</code>: 邀请ID</li>
+</ul>
+<h4 id="响应-29"><strong>响应</strong> </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token number">123</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"群组名称"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"group_chat"</span><span class="token punctuation">,</span>
+    <span class="token property">"avatarUrl"</span><span class="token operator">:</span> <span class="token string">"群组头像URL"</span><span class="token punctuation">,</span>
+    <span class="token property">"host"</span><span class="token operator">:</span> <span class="token string">"xxx"</span><span class="token punctuation">,</span>
+    <span class="token property">"admins"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"xxx"</span><span class="token punctuation">,</span> <span class="token string">"aaa"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"members"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"xxx"</span><span class="token punctuation">,</span> <span class="token string">"aaa"</span><span class="token punctuation">,</span> <span class="token string">"bbb"</span><span class="token punctuation">,</span> <span class="token string">"yyy"</span><span class="token punctuation">,</span> <span class="token string">"zzz"</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>id</code>: 群组ID</li>
+<li><code>name</code>: 群组名称</li>
+<li><code>type</code>: 群组类型</li>
+<li><code>avatarUrl</code>: 群组头像URL</li>
+<li><code>host</code>: 群组群主ID</li>
+<li><code>admins</code>: 群组管理员ID列表</li>
+<li><code>members</code>: 群组成员ID列表</li>
+</ul>
+<h4 id="异常处理-28"><strong>异常处理</strong> </h4>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>错误码</th>
+<th>错误提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>400</td>
+<td>-2</td>
+<td>邀请不存在 / 群聊不存在</td>
+</tr>
+<tr>
+<td>401</td>
+<td>-3</td>
+<td>JWT 验证失败</td>
+</tr>
+<tr>
+<td>403</td>
+<td>-4</td>
+<td>权限不足</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="更新群组信息-chatupdate_group"><strong>更新群组信息 /chat/update_group</strong> </h3>
+<h4 id="post-请求-11"><strong>POST 请求</strong> </h4>
+<p>更新指定群组的基本信息,如群组名称和头像。</p>
+<h4 id="请求参数-8"><strong>请求参数</strong> </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"userId"</span><span class="token operator">:</span> <span class="token string">"xxx"</span><span class="token punctuation">,</span>
+    <span class="token property">"groupId"</span><span class="token operator">:</span> <span class="token number">123</span><span class="token punctuation">,</span>
+    <span class="token property">"newName"</span><span class="token operator">:</span> <span class="token string">"新的群组名称"</span><span class="token punctuation">,</span>
+    <span class="token property">"newAvatarUrl"</span><span class="token operator">:</span> <span class="token string">"新的群组头像URL"</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>userId</code>: 修改群组信息的用户ID</li>
+<li><code>groupId</code>: 要修改的群组ID</li>
+<li><code>newName</code>: 新的群组名称(可选)</li>
+<li><code>newAvatarUrl</code>: 新的群组头像URL(可选)</li>
+</ul>
+<h4 id="响应-30"><strong>响应</strong> </h4>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token number">123</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"新的群组名称"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"group_chat"</span><span class="token punctuation">,</span>
+    <span class="token property">"avatarUrl"</span><span class="token operator">:</span> <span class="token string">"新的群组头像URL"</span><span class="token punctuation">,</span>
+    <span class="token property">"host"</span><span class="token operator">:</span> <span class="token string">"xxx"</span><span class="token punctuation">,</span>
+    <span class="token property">"admins"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"xxx"</span><span class="token punctuation">,</span> <span class="token string">"aaa"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"members"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"xxx"</span><span class="token punctuation">,</span> <span class="token string">"aaa"</span><span class="token punctuation">,</span> <span class="token string">"bbb"</span><span class="token punctuation">,</span> <span class="token string">"yyy"</span><span class="token punctuation">,</span> <span class="token string">"zzz"</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>id</code>: 群组ID</li>
+<li><code>name</code>: 群组名称</li>
+<li><code>type</code>: 群组类型</li>
+<li><code>avatarUrl</code>: 群组头像URL</li>
+<li><code>host</code>: 群组群主ID</li>
+<li><code>admins</code>: 群组管理员ID列表</li>
+<li><code>members</code>: 群组成员ID列表</li>
+</ul>
+<h4 id="异常处理-29"><strong>异常处理</strong> </h4>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>错误码</th>
+<th>错误提示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>400</td>
+<td>-2</td>
+<td>用户不存在 / 群聊不存在</td>
+</tr>
+<tr>
+<td>401</td>
+<td>-3</td>
+<td>JWT 验证失败</td>
+</tr>
+<tr>
+<td>403</td>
+<td>-4</td>
+<td>权限不足 / 群聊名称格式错误</td>
+</tr>
+</tbody>
+</table>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

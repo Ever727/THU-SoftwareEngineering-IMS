@@ -1,0 +1,91 @@
+<mxfile host="65bd71144e">
+    <diagram id="YFM-RyfU9Ck2eGb5KXJd" name="第 1 页">
+        <mxGraphModel dx="886" dy="1695" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="信息编辑" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;html=1;rounded=0;shadow=0;glass=0;swimlaneFillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="190" y="-180" width="560" height="540" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="用户" style="swimlane;startSize=20;html=1;rounded=0;swimlaneFillColor=default;spacingLeft=0;" vertex="1" parent="2">
+                    <mxGeometry y="20" width="330" height="520" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="edgeStyle=none;html=1;" edge="1" parent="3" source="5" target="7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="编辑界面" style="rounded=0;whiteSpace=wrap;html=1;gradientColor=none;" vertex="1" parent="3">
+                    <mxGeometry x="112.5" y="30" width="75" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="编辑信息" style="edgeStyle=none;html=1;" edge="1" parent="3" source="7" target="11">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="编辑信息或注销账号" style="rhombus;whiteSpace=wrap;html=1;rounded=0;gradientColor=none;spacingLeft=20;spacingRight=20;" vertex="1" parent="3">
+                    <mxGeometry x="95" y="100" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="edgeStyle=none;html=1;" edge="1" parent="3" source="9" target="12">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="提示是否注销" style="whiteSpace=wrap;html=1;rounded=0;gradientColor=none;spacingLeft=0;spacingRight=0;" vertex="1" parent="3">
+                    <mxGeometry x="10" y="180" width="75" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="注销账号" style="edgeStyle=none;html=1;" edge="1" parent="3" source="7" target="9">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="输入新昵称、邮箱、手机号、密码、头像" style="whiteSpace=wrap;html=1;rounded=0;gradientColor=none;spacingLeft=0;spacingRight=0;spacing=2;" vertex="1" parent="3">
+                    <mxGeometry x="205" y="180" width="105" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="输入原密码" style="whiteSpace=wrap;html=1;rounded=0;gradientColor=none;spacingLeft=0;spacingRight=0;" vertex="1" parent="3">
+                    <mxGeometry x="112.5" y="280" width="75" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" style="edgeStyle=none;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="3" source="11" target="12">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="160" y="500.0000000000002" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="14" value="刷新页面正确显示信息" style="whiteSpace=wrap;html=1;rounded=0;gradientColor=none;spacingLeft=0;spacingRight=0;" vertex="1" parent="3">
+                    <mxGeometry x="112.5" y="450" width="75" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="系统" style="swimlane;startSize=20;html=1;rounded=0;swimlaneFillColor=default;" vertex="1" parent="2">
+                    <mxGeometry x="330" y="20" width="230" height="520" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="edgeStyle=none;html=1;" edge="1" parent="15" source="17" target="18">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="判断密码是否正确" style="rhombus;whiteSpace=wrap;html=1;rounded=0;gradientColor=none;spacingLeft=0;spacingRight=0;" vertex="1" parent="15">
+                    <mxGeometry x="47.5" y="320" width="135" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="保存信息" style="whiteSpace=wrap;html=1;rounded=0;gradientColor=none;spacingLeft=0;spacingRight=0;" vertex="1" parent="15">
+                    <mxGeometry x="77.5" y="410" width="75" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="2" source="12" target="17">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="150" y="370"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="2" source="17" target="7">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="140.00000000000023" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="445" y="145"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="21" value="密码错误" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="20">
+                    <mxGeometry x="0.5188" y="-2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" value="" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="2" source="18" target="14">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="520" y="470" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="445" y="490"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
