@@ -1,0 +1,6 @@
+[submodule "tasright-backend"]
+	path = tasright-backend
+	url = https://github.com/Ever727/IMS-backend
+[submodule "tasright-frontend"]
+	path = tasright-frontend
+	url = https://github.com/Ever727/IMS-frontend
